@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+.button-container,
+button,
+a {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content-container .col1 {
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header header" 2fr "main main" 3fr "action action" 1fr;
+  height: 100%;
+  width: 600px;
+}
+
+.main-content-container .col1 img {
+  grid-area: header;
+}
+
+.main-content-container .col1 .main-content {
+  grid-area: main;
+  margin-bottom: 15px;
+}
+
+.main-content-container .col1 .main-content .title1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content-container .col1 .main-content .title1 p:nth-child(1) {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.main-content-container .col1 .main-content .title1 p:nth-child(2) {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a0a1ac;
+}
+
+.main-content-container .col1 .main-content h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #242942;
+}
+
+.main-content-container .col1 .main-content .title2 {
+  width: 280px;
+  color: #5b5f71;
+}
+
+.main-content-container .col1 .button-container {
+  grid-area: action;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content-container .col1 .button-container button {
+  background-color: #ff5c5c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 175px;
+  height: 45px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.main-content-container .col1 .button-container p {
+  color: #a0a1ac;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-content-container .col2 {
+  position: relative;
+}
+
+.main-content-container .col2 .bg-color {
+  position: absolute;
+  top: 0%;
+  height: 60%;
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  z-index: -999;
+  background-color: #eef3f6;
+}
+
+.main-content-container .col2 .nav-content {
+  height: 150px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main-content-container .col2 .nav-content a {
+  color: #242942;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-content-container .col2 .nav-content a:hover {
+  text-decoration: underline;
+  color: #242942;
+}
+/*# sourceMappingURL=index.css.map */
