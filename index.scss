@@ -76,7 +76,7 @@ a {
           margin-left: 10px;
           font-size: 0.8rem;
           text-transform: uppercase;
-          letter-spacing: 2px;
+          letter-spacing: 3px;
           color: $grayish-blue;
         }
       }
@@ -96,6 +96,7 @@ a {
       grid-area: action;
       display: flex;
       align-items: center;
+
       button {
         background-color: $red;
         border: none;
@@ -106,13 +107,18 @@ a {
         text-transform: uppercase;
         font-size: 1rem;
         letter-spacing: 1px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
 
       p {
         color: $grayish-blue;
         margin-left: 1rem;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 3.5px;
       }
     }
   }
@@ -130,6 +136,10 @@ a {
       background-color: $light-grayish-blue;
     }
 
+    img:nth-child(1) {
+      display: none;
+    }
+
     .nav-content {
       height: 150px;
       width: 70%;
@@ -137,15 +147,96 @@ a {
       justify-content: space-around;
       align-items: center;
       margin: auto;
+
       a {
         color: $very-dark-blue;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 700;
+        transition: all 0.5s ease-in-out;
 
         &:hover {
           text-decoration: underline;
           color: $very-dark-blue;
+        }
+      }
+
+      .login {
+        color: $grayish-blue;
+
+        &:hover {
+          color: $grayish-blue;
+        }
+      }
+
+      .small-circle {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: $grayish-blue;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 675px) {
+  .page-container {
+    height: 100vh;
+    .main-content-container {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+
+      .col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 3rem;
+
+        img {
+          display: none;
+        }
+      }
+
+      .col2 {
+        width: 100%;
+
+        .nav-mobile-container {
+          display: flex;
+          padding: 2rem;
+          justify-content: space-between;
+
+          img {
+            display: unset;
+            width: unset;
+          }
+
+          .menu-button {
+            position: relative;
+            .burger {
+              position: absolute;
+              content: "";
+              width: 28px;
+              height: 3px;
+              background-color: black;
+
+              &::before {
+              }
+              &::after {
+                transform: translateY(-2px);
+              }
+            }
+          }
+        }
+
+        .nav-content {
+          display: none;
+        }
+
+        img {
+          height: 70%;
+          width: 100%;
         }
       }
     }
