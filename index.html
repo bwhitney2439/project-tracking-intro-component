@@ -28,55 +28,66 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="page-container">
-      <div class="main-content-container">
-        <div class="col1">
-          <img src="./images/logo.svg" alt="" />
+    <!-- <div class="page-container"> -->
+    <div class="main-content-container">
+      <div class="col1">
+        <img src="./images/logo.svg" alt="" />
 
-          <div class="main-content">
-            <div class="title1">
-              <p>NEW</p>
-              <p>Monograph Dashboard</p>
-            </div>
-            <h1>Powerful insights into your team</h1>
-            <p class="title2">
-              Project planning and time tracking for agile teams
-            </p>
+        <div class="main-content">
+          <div class="title1">
+            <p>NEW</p>
+            <p>Monograph Dashboard</p>
           </div>
-
-          <div class="button-container">
-            <button>schedule a demo</button>
-            <p>to see a preview</p>
-          </div>
+          <h1>Powerful insights into your team</h1>
+          <p class="title2">
+            Project planning and time tracking for agile teams
+          </p>
         </div>
 
-        <div class="col2">
-          <div class="bg-color"></div>
-          <div class="nav-mobile-container">
-            <img src="./images/logo.svg" alt="" />
-            <div class="menu-button">
-              <div class="burger"></div>
-            </div>
-          </div>
-          <div class="nav-content">
-            <a href="">product</a>
-            <a href="">features</a>
-            <a href="">pricing</a>
-            <div class="small-circle"></div>
-            <a class="login" href="">login</a>
-          </div>
-
-          <img src="./images/illustration-devices.svg" alt="" />
+        <div class="button-container">
+          <button>schedule a demo</button>
+          <p>to see a preview</p>
         </div>
       </div>
-      <footer>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Ben Whitney</a>.
-        </p>
-      </footer>
+
+      <div class="col2">
+        <div class="bg-color"></div>
+        <div class="nav-mobile-container">
+          <img src="./images/logo.svg" alt="" />
+          <div class="menu-button" onClick="tansform(this)">
+            <div class="burger-bar1"></div>
+            <div class="burger-bar2"></div>
+            <div class="burger-bar3"></div>
+          </div>
+        </div>
+        <div class="nav-content">
+          <a href="">product</a>
+          <a href="">features</a>
+          <a href="">pricing</a>
+          <div class="small-circle"></div>
+          <a class="login" href="">login</a>
+        </div>
+
+        <img src="./images/illustration-devices.svg" alt="" />
+      </div>
     </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ben Whitney</a>.
+      </p>
+    </footer>
+    <!-- </div> -->
+
+    <script>
+      function tansform(x) {
+        x.classList.toggle("change");
+        document
+          .getElementsByClassName("nav-content")[0]
+          .classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
